@@ -1,4 +1,4 @@
-package com.back.jpa.entity;
+package com.back.boundedContext.global.entity;
 
 import jakarta.persistence.MappedSuperclass;
 import lombok.Getter;
