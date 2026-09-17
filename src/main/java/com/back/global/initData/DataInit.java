@@ -1,4 +1,4 @@
-package com.back.boundedContext.global.initData;
+package com.back.global.initData;
 
 import com.back.boundedContext.member.entity.Member;
 import com.back.boundedContext.post.entity.Post;

@@ -1,4 +1,4 @@
-package com.back.boundedContext.global.exception;
+package com.back.global.exception;
 
 import lombok.Getter;
 
