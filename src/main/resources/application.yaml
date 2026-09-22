@@ -38,9 +38,13 @@ custom:
     product:
       payoutRate: 90
 
+  payout:
+    readyWaitingDays: 14
+
   global:
     internalBackUrl: http://localhost:${server.port:8080}
     holdingMemberId: 2
+
   member:
     password:
       changeDays: 90
