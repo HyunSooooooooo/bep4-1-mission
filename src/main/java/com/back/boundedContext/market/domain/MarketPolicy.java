@@ -10,4 +10,12 @@ public class MarketPolicy {
     @Value("${custom.market.product.payoutRate}")
     public void setProductPayoutRate(double rate) {
         PRODUCT_PAYOUT_RATE = rate;
-    }}
+    }
+    public static long calculatePayoutFee(long salePrice, double payoutRate) {
+        return salePrice - calculateSalePriceWithoutFee(salePrice, payoutRate);
+    }
+
+    public static long calculateSalePriceWithoutFee(long salePrice, double payoutRate) {
+        return Math.round(salePrice * payoutRate / 100);
+    }
+}
